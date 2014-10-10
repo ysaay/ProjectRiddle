@@ -1,0 +1,15 @@
+{
+  "version": "0.1",
+  "name": "Cencia Technologia Quiz",
+  "description": "Cencia Technologi Quiz",
+  "launch_path": "/index.html",
+  "icons": {
+    "60": "/icons/60.png",
+    "128": "/icons/128.png"
+  },
+  "developer": {
+    "name": "Not so Wicked",
+    "url": ""
+  },
+  "default_locale": "en"
+}

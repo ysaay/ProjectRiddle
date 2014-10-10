@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>Oh! My Riddle</title>
+	
+	
+	<!-- boostrap modal START-->
+	<link href="css/bootstrap-modal-bs3patch.css" rel="stylesheet" />
+	<link href="css/bootstrap.css" rel="stylesheet" />
+	<link href="css/prettify.css" rel="stylesheet" />
+	
+	<link href="css/bootstrap-responsive.css" rel="stylesheet" />
+	<link href="css/bootstrap-modal.css" rel="stylesheet" />
+	<!-- boostrap modal END-->
+	
+	
+	
+	<script type="text/javascript" src="js/jq.js"></script><!-- jquery script -->
+	<script type="text/javascript" src="js/quizArray.js"></script>
+	
+	
+	
+	<link rel="stylesheet" href="css/style-custom.css"><!-- custom style -->
+	<style type="text/css">
+		.btn{
+			padding:15px;
+			margin:5px auto;
+		}
+		.container{
+			text-align:center;
+		}
+		.page-container{
+			z-index:999999900;
+		}
+		body{
+			background:#35aab4;
+		}
+		.container{
+			margin-top:10%;
+		}
+		
+		
+	</style>
+</head>
+<body>
+	<div id="index_modal_container" class="index_modal_container modal hide fade" data-backdrop="static" tabindex="-1" data-keyboard="false">
+		</div>	
+	<div id="splashScreen">	</div>
+	<div class="splashImg"><img class="splashImgLogo" src="img/splashscreen.png" alt="" class="img-thumbnail" /></div>
+	<div class="bodyLogo" style=""></div>
+	<div class="page-container">
+		<div class="container">
+			
+			<div class="row col-lg-12" style="width:100%;text-align:center">
+				
+				<div class="col-lg-12">
+					<img src="img/a.png" alt=""/>
+				</div>
+				<div class="col-lg-12" >
+					<button id="btn-play" class="btn btn-warning btn-large col-lg-12" style="font-size:30px; font-family: 'AR DELANEY';">Start Game</button><br />
+				</div>
+				
+				<div class="col-lg-12">
+					<input id="btn-leaderboard" style="font-size:30px; font-family: 'AR DELANEY';"type="button" value="Leaderboard" class="btn btn-warning btn-large col-lg-12"/><br />
+				</div>
+				
+				<div class="col-lg-12">
+					<h2 style="color:#ffffff"  id="txt-username"></h2>
+				
+				</div>
+				
+				<div class="col-lg-12">
+					<input id="btn-login" style="font-size:30px; font-family: 'AR DELANEY';" class="btn-login btn btn-warning btn-large col-lg-12" type="button" value="Login" /><br />
+				
+				</div>
+				<!--<input id="btn-register" type="button" value="Register" style="font-size:30px; font-family: 'AR DELANEY';"/><br />-->
+				
+				<!--<button id="test" class="ajax demo btn btn-primary btn-large" data-toggle="modal">View Demo</button>-->
+				
+				<!--<input id="btn-login-logout" type="button" value="LOGIN" style="font-size:30px; font-family: 'AR DELANEY';" /><br />-->
+				
+			</div>
+			
+		</div>
+	</div>	
+	<script type="text/javascript" src="js/jq-custom.js"></script><!--custom jq script for for functions and variables-->
+	<!-- boostrap modal JS  START-->
+	<script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/prettify.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap-modalmanager.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+	<!-- boostrap modal JS  END-->
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			
+			splashScreenIntro();//splash screen function --index.html
+			checkIfLogin();//--index.html
+			storeQuizArrayToLocalStorage();//store quizArray to localStorage --index.html
+		
+		});
+		
+	</script>
+	<script id="ajax" type="text/javascript">
+		var $modal = $('#index_modal_container');
+
+		$('#test').on('click', function(){
+		  // create the backdrop and wait for next modal to be triggered
+		  //$('body').modalmanager('loading');<!-- para sa loading-->
+
+		  setTimeout(function(){
+			 $modal.load('game_over_page.html', '', function(){
+			  $modal.modal();
+			});
+		  },10);<!-- time out kung gano katagal 1000 ung original-->
+		});
+
+		
+	</script>
+	
+</body>
+</html>

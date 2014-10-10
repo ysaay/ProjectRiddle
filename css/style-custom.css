@@ -1,0 +1,86 @@
+.displayNone{
+	height:0px;
+	width:0px;
+	background:none;
+	background-size:0;
+	
+}
+.row{
+	margin-bottom:10px;
+	text-align:center;
+}
+*{
+			margin:0px;
+			padding:0px;
+		}
+		
+		/* for modal */
+		
+		.modal-header, .modal-footer{
+			background:#43cac5;
+			color:#ffffff;
+		}
+		.modal-body{
+			background:#b99d5b;
+			color:#ffffff;
+		}
+		/* for modal END*/
+		
+		
+		
+		#splashScreen{
+			position:fixed;
+			width:100%;
+			height:100%;
+			background:url("../img/splash-bg.png") repeat-y;
+			background-size:100%;
+			
+			z-index:100;
+			left:0;
+			top:0;
+		}
+		.splashImg{	
+			background:red;
+			left:25%;
+			width:50%;
+			position:fixed;
+			text-align:center;
+			z-index:101;
+			margin-top:20%;
+			min-width:5px;
+			background:none;
+		}
+		.splashImgLogo{
+			width:inherit;
+		}
+		
+		body{
+			background:#35aab4;
+		}
+		.container{
+			margin-top:10%;
+		}
+		
+		@media (min-width:320px) and (max-width:767px){
+			.splashImg{
+				margin-top:50%;
+			}
+		}
+		@media (min-width:768px) and (max-width:1028px){
+			.splashImg{
+				margin-top:40%;
+				
+			}
+		}
+		
+		.textCenter{
+			text-align:center;
+		}
+		table{
+			width:100%;
+			border:#3cdcd3;
+			color:#ffffff;
+		}
+		td{
+			padding:5px;
+		}

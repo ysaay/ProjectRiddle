@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>Oh! My Riddle</title>
+	
+	<!-- boostrap modal START-->
+	<link href="css/bootstrap-modal-bs3patch.css" rel="stylesheet" />
+	<link href="css/bootstrap.css" rel="stylesheet" />
+	<link href="css/prettify.css" rel="stylesheet" />
+	
+	<link href="css/bootstrap-responsive.css" rel="stylesheet" />
+	<link href="css/bootstrap-modal.css" rel="stylesheet" />
+	<!-- boostrap modal END-->
+	
+	<script type="text/javascript" src="js/jq.js"></script><!-- jquery script -->
+	<link rel="stylesheet" href="css/style-custom.css"><!-- custom style -->
+	<style type="text/css">
+		table{
+			
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="modal-header ">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		<h3>Leaderboard</h3>
+	</div>
+	<div class="modal-body">
+		<center>
+			<table id="leaderboardTable" border="1">
+				<thead>
+					<tr>
+						<th colspan="4">HIGH SCORES</th>
+					</tr>
+					<tr>
+						<th>Top Players</th>
+						<th>Username</th>
+						<th>Score</th>
+					</tr>
+					
+				</thead>
+			</table>
+			
+			<!--<input class="btn-main-menu" type="button" value="MAIN MENU" />-->
+		</center>
+	</div>
+	<div class="modal-footer">
+		<!--<button type="button" data-dismiss="modal" class="btn">Close</button>
+		<button type="button" class="btn btn-primary">Ok</button>-->
+	</div>
+	
+	<script type="text/javascript" src="js/jq-custom.js"></script><!--custom jq script for for functions and variables-->
+	<script type="text/javascript">
+	
+		getLeaderboard(); //call ajax leaderboard; --leaderboard_page.html
+	
+	</script>
+</body>
+</html>
